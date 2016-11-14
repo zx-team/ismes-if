@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="sb_zt" label="设备状态"  description="设备状态">
+	<field name="" value="10" label="空闲" parent="" state="valid"/>
+	<field name="" value="20" label="运行" parent="" state="valid"/>
+	<field name="" value="30" label="故障" parent="" state="valid"/>
+	<field name="" value="40" label="停机" parent="" state="valid"/>
+</category>
+

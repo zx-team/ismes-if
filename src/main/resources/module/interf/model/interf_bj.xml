@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 报警  暂时没有用到 -->
+<model version="1.0.6" name="interf_bj">
+	<fields>
+		<bjid type="pk" pk="true" comment="报警id" label="报警id"/>
+		<sbbh type="string" required="false" maxlength="50" comment="设备编号" label="设备编号"/>
+		<sjsj type="timestamp" required="false" comment="数据时间" label="数据时间"/>
+		<xtdqsj type="timestamp" required="true" comment="系统当前时间" label="系统当前时间"/>
+		<gzm type="string" required="false" maxlength="50" comment="故障码" label="故障码"/>
+	</fields>
+</model>
+

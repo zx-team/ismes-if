@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 实时运行参数监控 2222-->
+<model version="1.0.10" name="interf_ssyxcsjk">
+	<fields>
+		<ssyxcsjkid type="pk" pk="true" comment="实时运行参数监控id" label="实时运行参数监控id"/>
+		<sbbh type="string" maxlength="50" comment="设备编号" label="设备编号"/>
+		<sjsj type="timestamp" required="false" comment="数据时间" label="数据时间"/>
+		<zzzsz_s type="decimal" required="false" length="10" precision="4" comment="主轴转速值（S）"/>
+		<zzplz type="decimal" required="false" length="10" precision="4" comment="主轴倍率值"/>
+		<zzfzz type="decimal" required="false" length="10" precision="4" comment="主轴负载值"/>
+		<zjsdz_f type="decimal" required="false" length="10" precision="4" comment="进给速度值（F）"/>
+		<xaxis type="decimal" required="false" length="10" precision="4" comment="x轴坐标"/>
+		<yaxis type="decimal" required="false" length="10" precision="4" comment="y轴坐标"/>
+		<zaxis type="decimal" required="false" length="10" precision="4" comment="z轴坐标"/>
+		<xtdqsj type="timestamp" required="true" comment="系统当前时间" label="系统当前时间"/>
+	</fields>
+</model>

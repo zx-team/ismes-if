@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 设备效率 暂时不用 -->
+<model version="1.0.2" name="interf_sbxl">
+	<fields>
+		<sbxlid type="pk" pk="true" comment="设备效率id" label="设备效率id"/>
+		<sbbh type="string" required="false" maxlength="50" comment="设备编号" label="设备编号"/>
+		<sjsj type="timestamp" required="false" comment="数据时间" label="数据时间"/>
+		<sboee type="string" required="false" maxlength="50" comment="设备OEE" label="设备OEE"/>
+		<xtdqsj type="timestamp" required="true" comment="系统当前时间" label="系统当前时间"/>
+	</fields>
+</model>
+

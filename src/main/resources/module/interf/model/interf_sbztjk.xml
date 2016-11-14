@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 设备状态监控  --><!-- 5555 5556 -->
+<model version="1.0.11" name="interf_sbztjk">
+	<fields>
+		<sbztjkid type="pk" pk="true" comment="设备状态监控id" label="设备状态监控id"/>
+		<sbbh type="string" required="false" maxlength="50" comment="设备编号" label="设备编号"/>
+		<sjkssj type="timestamp" required="false" comment="数据开始时间" label="数据开始时间"/>
+		<sjjssj type="timestamp" required="false" comment="数据结束时间" label="数据结束时间"/>
+		<xtzt type="dict" required="false" comment="系统状态" label="系统状态"/>
+		<cwzt type="dict" required="false" comment="错误状态" label="错误状态"/>
+		<sbztdm type="dict" required="false" comment="设备状态代码" label="设备状态代码"/>
+		<xtdqsj type="timestamp" required="true" comment="系统当前时间" label="系统当前时间"/>
+	</fields>
+</model>
+

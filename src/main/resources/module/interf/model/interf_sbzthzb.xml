@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 设备状态汇总表  不用了-->
+<model version="1.0.10" name="interf_sbzthzb">
+	<fields>
+		<sbzthzid type="pk" pk="true" comment="设备状态汇总表id" label="设备状态汇总表id"/>
+		<sbbh type="string" maxlength="50" comment="设备编号" label="设备编号"/>
+		<sjsj type="timestamp" required="false" comment="数据时间" label="数据时间"/>
+		<xtzt type="dict" required="false" comment="系统状态1" label="系统状态"/>
+		<cwzt type="dict" required="false" comment="错误状态" label="错误状态"/>
+		<sbztdm type="dict" required="false" comment="设备状态代码" label="设备状态代码"/>
+		<xtdqsj type="timestamp" required="true" comment="系统当前时间" label="系统当前时间"/>
+	</fields>
+</model>

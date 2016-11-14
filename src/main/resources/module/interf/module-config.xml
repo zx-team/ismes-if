@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="interf" version="1.0.0" category="system">
+	<information>
+		<name>System User Management</name>
+		<vendor>
+			<name>Isesol isMES</name>
+			<url>http://www.isesol.com/</url>
+		</vendor>
+		<description>User is a module which adds user functionality to system.</description>
+		<license>AGPL</license>
+	</information>
+	<activities>
+		<activity name="data_access" dialect="java"  roles="USER_MANAGE_ROLE" class="com.isesol.mes.ismes.interf.activity.DataAccessActivity"/>
+		<activity name="interfService" dialect="java"  roles="USER_MANAGE_ROLE" class="com.isesol.mes.ismes.interf.service.interfService"/>
+		<activity name="pushMsgService" dialect="java"  roles="USER_MANAGE_ROLE" class="com.isesol.mes.ismes.interf.service.PushMsgService"/>
+	</activities>
+	<roles>
+		<role name="USER_MANAGE_ROLE" label="用户管理角色" description="具有该角色的用户可以对用户进行维护" />
+	</roles>
+	<services>
+		<service name = "data_access_service" activity = "data_access" activity-method = "insertAccessData"/>
+		<service name = "bg_5004_service" activity = "data_access" activity-method = "bg_5004"/>
+		<service name = "type2table_service" activity = "data_access" activity-method = "querytablename"/>
+		<service name = "ifService_tjxx" activity = "interfService" activity-method = "ifService_tjxx"/>
+		<service name = "ifService_ljsj" activity = "interfService" activity-method = "ifService_ljsj"/>
+		<service name = "ifService_gzxx" activity = "interfService" activity-method = "ifService_gzxx"/>
+		<service name = "ifService_ssxx" activity = "interfService" activity-method = "ifService_ssxx"/>
+		<service name = "ifService_ssxxBysbbh" activity = "interfService" activity-method = "ifService_ssxxBysbbh"/>
+		<service name = "ifService_status_timeout" activity = "data_access" activity-method = "status_timeout"/>
+		<service name = "ifService_pushMsg" activity = "pushMsgService" activity-method = "pushMsg2NC"/>
+		<service name = "updateSsTable_service" activity = "data_access" activity-method = "updateSsTable"/>
+		<service name = "insertSsTable_service" activity = "data_access" activity-method = "insertSsTable"/>
+		<service name = "fdkPostJson_service" activity = "data_access" activity-method = "fdkPostJson"/>
+	</services>
+</module>
